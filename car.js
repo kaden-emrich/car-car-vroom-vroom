@@ -18,6 +18,8 @@ class Car {
 
         this.staticTurn = false;
 
+        this.color = 'black';
+
         this.viewType = viewType;
     }
 
@@ -52,6 +54,8 @@ class Car {
 
     draw(ctx) {
         ctx.save();
+
+        ctx.fillStyle = this.color;
 
         if(this.viewType == 'default') {
             ctx.translate(this.x, this.y);
