@@ -39,7 +39,7 @@ function drawTestBackground(gridSize = 50) {
 
     gameCtx.strokeStyle = 'pink';
     gameCtx.beginPath();
-    gameCtx.moveTo(((backgroundSize + gameCanvas.width) / 2), gameCanvas.width / 2);
+    gameCtx.moveTo(((backgroundSize - gameCanvas.width) / 2), gameCanvas.width / 2);
     gameCtx.lineTo((-(backgroundSize + gameCanvas.width) / 2), gameCanvas.width / 2);
     gameCtx.stroke();
     
@@ -47,7 +47,7 @@ function drawTestBackground(gridSize = 50) {
 
     gameCtx.strokeStyle = 'lightGreen';
     gameCtx.beginPath();
-    gameCtx.moveTo(gameCanvas.height / 2, ((backgroundSize + gameCanvas.height) / 2));
+    gameCtx.moveTo(gameCanvas.height / 2, ((backgroundSize - gameCanvas.height) / 2));
     gameCtx.lineTo(gameCanvas.height / 2, (-(backgroundSize + gameCanvas.height) / 2));
     gameCtx.stroke();
 
